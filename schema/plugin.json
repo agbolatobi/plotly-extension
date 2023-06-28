@@ -1,0 +1,10 @@
+{
+    "jupyter.lab.toolbars": {
+      "Notebook": [
+        {
+          "name": "Open Plotly Dialog",
+          "command": "plotly-extension:open-dialog"
+        }
+      ]
+    }
+}
