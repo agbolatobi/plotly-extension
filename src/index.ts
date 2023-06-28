@@ -20,7 +20,9 @@ const plugin: JupyterFrontEndPlugin<void> = {
     app.commands.addCommand(command, {
       label: 'plotly-extension:open-dialog',
       execute: () => {
+        // Display initial Dialog when the command is initiated
         InputDialog.getText({ title: 'Provide a text' }).then(value => {
+          // Check if input is empty
           if (value.value && value.value != ""){
             const input: string = String(value.value)
             showDialog({
